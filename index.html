@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitter</title>
+     
+    <!-- CSS FILE LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/bf1c643ee2.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+</head>
+
+<body class="">
+    <div class="container-fluid container-md">
+                   <!-- xs NAV BAR -->
+                <nav class=" bg-light xs-nav fixed-bottom    d-sm-none">
+                    <div class="container-fluid">
+                        <div class="row h-50">
+                            <div class="col-3">
+                                <span><i class="fa-solid fa-house fs-3 py-3"></i></span>
+                            </div>
+                            <div class="col-3">
+                            <span><i class="fa-solid fa-magnifying-glass fs-2 py-3 "></i></span>
+                            </div>
+                            <div class="col-3">
+                            <span><i class="fa-solid fa-bell fs-2 py-3"></i></span>
+                            </div>
+                            <div class="col-3 ">
+                                <span><i class="fa-solid fa-envelope fs-2 py-3"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+        <div class="row ">
+            <!-- LEFT SIDE BAR -->
+            <div
+                class="d-none col-sm-2  d-sm-block  col-md-3 col-lg-3 d-flex flex-column text-sm-end text-md-start  align-items-lg-start left_sidebar border-end ">
+                <div>
+                    <span><i class="fa-brands fa-twitter display-5 text-info py-3  "></i></span>                   
+                </div>
+                <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-house fs-3 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2 fw-bold">Home</p>                                          
+                </div>
+                <div class="d-flex align-items-center d-block d-md-none  justify-content-sm-end justify-content-md-start justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-magnifying-glass fs-2 py-3 "></i></span>
+                    <!-- <p class="d-none d-lg-block fs-3 pt-3 ps-1">Home</p> -->
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-hashtag fs-2 py-3 d-none d-md-block"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Explore</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-bell fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Notifications</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Messages</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-bookmark fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Bookmark</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-file-lines fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">List</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-user fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Profile</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fw-bold fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">Log Out</p>
+                </div>               
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-ellipsis fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-4 pt-3 ps-2">More</p>
+                </div>
+            </div>
+
+            <!-- MAIN SECTION -->
+            <div class="col-12 col-sm-10 col-md-9 col-lg-6  main_bar ">
+                <div class="row d-flex justify-content-between align-items-center ps-1">
+                    <div class="col-1 pt-2">
+                        <div><span class="fs-4 fw-bold">Home</span></div>  
+                                                                          
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col pt-2 ">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" src="./asserts/images/me.jpg" alt="" height="60px">
+                            </div>
+                            <div class="col-9 col-sm-10 ">
+                                <input class="border-0 bg  form-control-lg" type="text" placeholder="What's happening?">
+                                <div class="ps-3 d-flex text-info">
+                                    <p><span><i class="fa-solid fa-earth-americas "></i></span></p>
+                                    <p class="fw-bold ps-1 ">Everyone can reply</p>
+                                    <hr>
+                                </div>
+                                <div class="row pb-2 justify-content-center">
+                                    <div class="col-9 text-info">
+                                        <span class="ps-3"><i class="fa-solid fa-image"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-gift"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-face-grin"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-location-pin"></i></span>
+                                    </div>
+                                    <div class="col-3 col-sm-2  ">
+                                         <a class="text-decoration-none fs-6  fw-bold text-white bg-info py-1 px-3  rounded-pill"
+                                         href="#">Tweet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex  justify-content-between align-items-center border">
+                            <div class="col-11 col-sm-10 ps-5  pt-1 d-flex pt-2">
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <p class="ps-1 fw-bold"> WELCOME BACK <span class="text-info fw-bold ">see
+                                        more</span></p>
+                                </div>
+                            <div class="col-1 col-sm-2 text-end fs-5 pt-2 ps-2">
+                                <span><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                        </div>
+                        <!-- TWEET 1 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+
+                                <img class="rounded-circle" src="./asserts/images/me.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Capin_Janix </span>@capin . 23h</p>
+                                        </div>
+                                    </div>
+                                <div class="col-1 me-2 ps-0">
+                                    <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                </div>
+                             </div>
+                         <div class="col">
+                                 The most awaited movie in 2023<span class="text-info">#Excited</span> Cant wait to watch it
+                                    <div class="video-container">
+                                        <video src="asserts/images/video1.mp4" controls></video>
+                                    </div>
+                                    <br>
+                                    <div class="col-"> <source src="asserts/images/video1.mp4">
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TWEET 2 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                 <img class="rounded-circle" src="./asserts/images/benjie.jpg" alt="" height="50px">
+                              </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Benjie_ChicMagnet </span>@chikmagnet . 23h</p>
+                                        </div>
+                                    </div>
+                                 <div class="col-1 me-2 ps-0">
+                             <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                         </div>
+                            </div>
+                                <div class="col">
+                                     Want a cute Devil come get me!<span class="text-info">#RAWRRRRR!</span>Girls are just my pasttime
+                                    <div class="video-container">
+                                        <video src="asserts/images/video4.mp4" controls></video>
+                                    </div>
+                                        <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>                       
+                                </div>                       
+                            </div>
+                        </div>
+
+                        <!-- TWEET 3 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./asserts/images/chavez.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Chavez_Gwapo </span>@Gwapo . 23h</p>
+                                        </div>
+                                    </div>
+                                 <div class="col-1 me-2 ps-0">
+                            <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                        </div>
+                            </div>
+                                 <div class="col">
+                                      Im tired watching hentai <span class="text-info">#LeviGodMode</span> suggest anything
+                                    <div class="video-container">
+                                        <video src="asserts/images/video3.mp4" controls></video>
+                                    </div>
+                                        <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>                        
+                                </div>
+                       
+                            </div>
+                        </div>
+
+                        <!-- TWEET 4 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./asserts/images/alson.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Alson_yamete </span>@yamete . 23h</p>
+                                        </div>
+                                    </div>
+                                <div class="col-1 me-2 ps-0">
+                            <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                        </div>
+                             </div>
+                                 <div class="col">
+                                       suggest ecchi anime  <span class="text-info">#HOTNEY</span> Come eat me DADDY! 
+                                    <div class="video-container">
+                                        <video src="asserts/images/video2.mp4" controls></video>
+                                    </div>
+                                         <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>                 
+                                </div>                        
+                            </div>
+                        </div>
+
+                        <!-- TWEET 5 -->
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./asserts/images/retchel.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 ">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Ritchel_Lamion </span>@Lamion . 23h</p>
+                                        </div>
+                                    </div>
+                                <div class="col-1 me-2 ps-0">
+                             <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                         </div>
+                             </div>
+                                <div class="col">
+                                        Lamion sa CDO <span class="text-info">#IMSEXY&IKNOW_IT</span> tilawe ko dika mag mahay! 
+                                    <div class="video-container">
+                                        <video src="asserts/images/video5.mp4" controls></video>
+                                    </div>
+                                        <br>
+                                    <div class="row pt-4">
+                                        <div class="col"><span><i class="fa-solid fa-comment"></i></span></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-from-square"></i></span>
+                                        </div>
+                                        <div class="col"><i class="fa-solid fa-heart"></i></div>
+                                        <div class="col"><span><i class="fa-solid fa-share-nodes"></i></span></div>
+                                    </div>                        
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT SIDE BAR -->
+            <div class="col-lg-3 d-none d-lg-block  w-25 h-100 right_side_bar d-flex">
+                <div class="">
+                    <div class="bg-opacity-10 bg-black rounded-pill">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-2 text-end fs-4">
+                                <span><i class="fa-solid fa-magnifying-glass ps-4"></i></span>
+                            </div>
+                            <div class="col-10"><input type="text"
+                                    class="form-control-lg border-0 me-1 w-75 bg-transparent"
+                                    placeholder="Search Twitter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-opacity-10 bg-black mx-1 my-2 pb-3 rounded-3">
+                        <div class="col">
+                            <div class="trending">
+                                <p class="fs-6 fw-bold py-2">Trends for you</p>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Trending in World</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Benjie_ChicMagnet</p>
+                                        <p class="">World Record to have 10k Girlfriends no breakup</p>
+                                        <p class="">100.7B Tweets</p>
+                                  </div>
+                            </div>
+                        <div class="row">
+                             <div class="col-9">
+                                 <p class="m-0">Trending in Galaxy</p>
+                                    </div>
+                                        <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                        <div class="row">
+                             <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Alson_yamete</p>
+                                        <p class="">Become the first Man to marry 100 otherworld Girls </p>
+                                        <p class="">999.9T Tweets</p>
+                                    </div>
+                                </div>
+                             <div class="row">
+                                  <div class="col-9">
+                                        <p class="m-0">Game trends</p>
+                                    </div>
+                                       <div class="col-3 text-end">
+                                          <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                         <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Chavez_Gwapo</p>
+                                        <p class="">Created the First Virtual reality MMORPG</p>
+                                        <p class="">900.1B Tweets</p>
+                                    </div>
+                                </div>
+                         <div class="row">
+                                <div class="col-9">
+                                        <p class="m-0">Trending in MilkyWay</p>
+                                    </div>
+                                 <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                         <div class="row">
+                                <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Ritchel_Lamion</p>
+                                        <p class="">Breaks the all time record to be the Most LAMION in the MilkyWay</p>
+                                        <p class="">90,104T Tweets</p>
+                                    </div>
+                              </div>
+                         <div class="row">
+                                 <div class="col-9">
+                                        <p class="m-0">Trending in Olympus</p>
+                                      </div>
+                                 <div class="col-3 text-end">
+                                       <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                 </div>
+                            </div>
+                         <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Capin_Janix</p>
+                                        <p class="">Replace Zeus to be the highest God in olympus</p>
+                                        <p class="">500.79T Tweets</p>
+                                    </div>
+                                </div>
+                        <div class="row">
+                                <div class="col-9">
+                                        <p class="m-0">Trending in World</p>
+                                    </div>
+                                <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                     </div>
+                                </div>
+                             </div>
+                        <div class="row">
+                            <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">Benjie_ChicMagnet</p>
+                                        <p class="">Impregnate Selena gomez,taylor swift,Kyle Jenner together in one month</p>
+                                        <p class="">888.90B Tweets</p>
+                                 </div>
+                            </div>
+                        </div>                                                               
+                    <span class="text-info">Show more</span>
+                         <div class="row bg-opacity-10 bg-black mx-1 my-2 pb-3 rounded-3">
+                                <div class="col">
+                                    <div class="trending">
+                                        <p class="fs-6 fw-bold py-2">Who To Follow</p>
+                                         <div class="row">
+                                             <div class="col-9">                          
+                                             <div><p class="m-0 fw-bold fa-follow ">Chrisjane Tang</p>                                                
+                                              <div><img class="rounded-circle" src="asserts/images/jane.jpg" alt="" height="40px"><span>@Chrisjane</span>
+                                                <button class="my-button"> Follow </button>                                                                                                                                                          
+                                                <div><p class="m-0 fw-bold fa-follow ">Patrick Qiacao</p>                                                
+                                                    <img class="rounded-circle" src="asserts/images/patrick.jpg" alt="" height="40px"><span>@Patrick</span>
+                                                        <button class="my-button"> Follow </button>                                                                                        
+                                                        <div><p class="m-0 fw-bold fa-follow ">John Edeson</p>                                                
+                                                            <div><img class="rounded-circle" src="asserts/images/edeson.jpg" alt="" height="40px"><span>@Edeson</span>
+                                                                <button class="my-button"> Follow </button>                                                                                         
+                                                        </div>                       
+                                                   </div>
+                                             </div>
+                                        </div>
+                                  </div>
+                            </div>
+                      </div>
+                 </div>   
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
